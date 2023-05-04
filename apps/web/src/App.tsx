@@ -1,31 +1,20 @@
 import { CircleOfFifths } from "chord-generator";
+import { ChordVisualizer, Content, Header } from "./components";
 
 const NaturalFifths = new CircleOfFifths();
+
+const TEXTS = {
+  title: "Twelve Tone Music",
+};
 
 function App() {
   return (
     <>
-      <h1>Twelve tone music</h1>
+      <Header>{TEXTS.title}</Header>
 
-      <h2>Some chords</h2>
-
-      <dl>
-        {NaturalFifths.getChords().map((chord) => {
-          return (
-            <div>
-              <dt>
-                <b>Name: </b>
-                {chord.name}
-              </dt>
-              <dd>
-                {chord.notes.map((note, i) =>
-                  i !== chord.notes.length - 1 ? `${note} - ` : note
-                )}
-              </dd>
-            </div>
-          );
-        })}
-      </dl>
+      <Content>
+        <ChordVisualizer chords={NaturalFifths.getChords()} />
+      </Content>
     </>
   );
 }

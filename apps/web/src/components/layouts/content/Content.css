@@ -1,0 +1,7 @@
+.content {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  max-width: 500px;
+  padding: 32px;
+}

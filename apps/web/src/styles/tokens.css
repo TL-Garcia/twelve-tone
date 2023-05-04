@@ -1,0 +1,23 @@
+:root {
+  /* COLORS */
+  --c-primary-70: #3e3048;
+  --c-primary-50: #8879a7;
+  --c-primary-30: #ebe1ff;
+
+  --c-neutral-100: #000;
+  --c-neutral-10: #fff;
+
+  /* TYPOGRAPHY */
+  /* Font Type */
+  --ff-heading: Verdana, Arial, sans-serif;
+  --ff-body: Verdana, Arial, sans-serif;
+
+  /* Font Size */
+  --fs-xxl: 3rem;
+  --fs-l: 2rem;
+  --fs-m: 1rem;
+  --fs-s: 0.75rem;
+
+  /* SHADOWS */
+  --sh-card: 3px 3px 8px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,50 @@
+.chord-visualizer {
+  border-radius: 8px;
+  background-color: var(--c-neutral-10);
+  box-shadow: var(--sh-card);
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  padding: 24px 60px;
+}
+
+.button {
+  background-color: var(--c-primary-50);
+  border-radius: 8px;
+  border: none;
+  color: var(--c-neutral-10);
+  font-weight: bold;
+  font-family: var(--ff-body);
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.chord-data {
+  align-content: center;
+  background-color: var(--c-primary-30);
+  border-radius: 50%;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+
+  /* TODO: REVIEW TECHNIQUES TO AVOID ELLIPSE */
+  width: 300px;
+  height: 300px;
+}
+
+.chord-data__name {
+  font-size: var(--fs-l);
+  font-family: var(--ff-heading);
+  font-weight: bold;
+}
+
+.chord-data__notes {
+  font-family: var(--ff-body);
+  font-weight: bold;
+}
+
+.chord-data__notes > :not(:last-child)::after {
+  content: " - ";
+}
