@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Button } from "../atoms";
+import { Button } from "@/components";
 import { ChordData } from "./components";
 
 import { Chord } from "chord-generator";
