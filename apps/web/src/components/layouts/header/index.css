@@ -4,9 +4,9 @@
   font-family: var(--ff-heading);
   padding: 24px;
   background-color: var(--c-primary-100);
-}
 
-.header__title {
-  font-size: var(--fs-xxl);
-  color: var(--c-neutral-10);
+  &__title {
+    font-size: var(--fs-xxl);
+    color: var(--c-neutral-10);
+  }
 }

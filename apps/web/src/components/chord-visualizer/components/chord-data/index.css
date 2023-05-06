@@ -10,19 +10,19 @@
   /* TODO: REVIEW TECHNIQUES TO AVOID ELLIPSE */
   width: 300px;
   height: 300px;
-}
 
-.chord-data__name {
-  font-size: var(--fs-l);
-  font-family: var(--ff-heading);
-  font-weight: bold;
-}
+  &__name {
+    font-size: var(--fs-l);
+    font-family: var(--ff-heading);
+    font-weight: bold;
+  }
 
-.chord-data__notes {
-  font-family: var(--ff-body);
-  font-weight: bold;
-}
+  &__notes {
+    font-family: var(--ff-body);
+    font-weight: bold;
 
-.chord-data__notes > :not(:last-child)::after {
-  content: " - ";
+    & > :not(:last-child)::after {
+      content: " - ";
+    }
+  }
 }
