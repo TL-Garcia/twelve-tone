@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./Header.css";
+import "./index.css";
 
 export const Header = ({ children }: React.PropsWithChildren): JSX.Element => {
   return (
