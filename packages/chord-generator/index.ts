@@ -71,3 +71,9 @@ export class CircleOfFifths {
     ];
   }
 }
+
+export type Chord = {
+  notes: string[];
+  name: string;
+  symbol: string;
+};

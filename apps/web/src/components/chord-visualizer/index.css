@@ -1,0 +1,10 @@
+.chord-visualizer {
+  border-radius: 8px;
+  background-color: var(--c-neutral-10);
+  box-shadow: var(--sh-card);
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  padding: 24px 60px;
+}
