@@ -1,8 +1,11 @@
 :root {
   /* COLORS */
-  --c-primary-70: #3e3048;
-  --c-primary-50: #8879a7;
-  --c-primary-30: #ebe1ff;
+  --c-primary-100: #3a004f;
+  --c-primary-80: #660087;
+  --c-primary-60: #b01fe3;
+  --c-primary-40: #d150ff;
+  --c-primary-20: #f7d9ff;
+  --c-primary-10: #fdf4ff;
 
   --c-neutral-100: #000;
   --c-neutral-10: #fff;

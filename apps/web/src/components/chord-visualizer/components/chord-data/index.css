@@ -1,6 +1,6 @@
 .chord-data {
   align-content: center;
-  background-color: var(--c-primary-30);
+  background-color: var(--c-primary-20);
   border-radius: 50%;
   display: grid;
   gap: 1rem;

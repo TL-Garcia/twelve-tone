@@ -3,7 +3,7 @@
   justify-content: center;
   font-family: var(--ff-heading);
   padding: 24px;
-  background-color: var(--c-primary-70);
+  background-color: var(--c-primary-100);
 }
 
 .header__title {
