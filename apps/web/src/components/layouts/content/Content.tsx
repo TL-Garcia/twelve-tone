@@ -1,7 +1,9 @@
-import * as React from "react";
+// vendors
+import { ParentComponent } from "solid-js";
 
+// styles
 import "./index.css";
 
-export const Content = ({ children }: React.PropsWithChildren): JSX.Element => {
-  return <div className="content">{children}</div>;
+export const Content: ParentComponent = ({ children }) => {
+  return <div class="content">{children}</div>;
 };

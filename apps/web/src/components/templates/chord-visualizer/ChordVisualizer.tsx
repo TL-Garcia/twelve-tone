@@ -1,10 +1,14 @@
-import * as React from "react";
+// vendors
+import { createSignal } from "solid-js";
 
+// components
 import { Button } from "@/components";
 import { ChordData } from "./components";
 
+// lib
 import { Chord } from "chord-generator";
 
+// styles
 import "./index.css";
 
 const TEXTS = {
@@ -12,18 +16,20 @@ const TEXTS = {
 };
 
 export const ChordVisualizer = ({ chords }: { chords: Chord[] }) => {
-  const [chordNumber, setChordNumber] = React.useState(0);
+  const [chordNumber, setChordNumber] = createSignal(0);
 
-  const showNextChord = () =>
-    setChordNumber((prev) => {
-      const isLastChord = prev === chords.length - 1;
+  const showNextChord = () => {
+    const prev = chordNumber();
+    const isLastChord = prev === chords.length - 1;
 
-      return isLastChord ? 0 : ++prev;
-    });
+    setChordNumber(isLastChord ? 0 : prev + 1);
+  }
+
+  const currentChord = () => chords[chordNumber()];
 
   return (
-    <main className="chord-visualizer">
-      <ChordData chord={chords[chordNumber]} />
+    <main class="chord-visualizer">
+      <ChordData chord={currentChord()} />
 
       <Button text={TEXTS.nextChordButton} onClick={showNextChord} />
     </main>

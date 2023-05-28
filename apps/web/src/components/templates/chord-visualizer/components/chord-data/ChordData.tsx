@@ -1,14 +1,19 @@
+// lib
 import { Chord } from "chord-generator";
+
+// styles
 import "./index.css";
+import { Component } from "solid-js";
 
-export const ChordData = ({ chord }: { chord: Chord }) => {
+export const ChordData: Component<{ chord: Chord }> = (props) => {
+
   return (
-    <div className="chord-data">
-      <div className="chord-data__name">{chord.name}</div>
+    <div class="chord-data">
+      <div class="chord-data__name">{props.chord.symbol}</div>
 
-      <div className="chord-data__notes">
-        {chord.notes.map((note) => (
-          <span key={note}>{note}</span>
+      <div class="chord-data__notes">
+        {props.chord.notes.map((note) => (
+          <span>{note}</span>
         ))}
       </div>
     </div>

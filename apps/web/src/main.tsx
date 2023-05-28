@@ -1,14 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+// vendors
+import { render } from "solid-js/web";
+
+// application
 import App from "./App.tsx";
+
+// global styles
 import "./styles/index.css";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const root = document.getElementById("root");
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+if (!root) {
+  throw new Error('No root element found');
+}
+
+render(() => <App />, root);

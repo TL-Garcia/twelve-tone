@@ -1,4 +1,7 @@
+// lib
 import { CircleOfFifths } from "chord-generator";
+
+// components
 import { ChordVisualizer, Content, Header } from "./components";
 
 const NaturalFifths = new CircleOfFifths();
